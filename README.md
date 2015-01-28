@@ -2,7 +2,7 @@
 
 # machinepack-azure
 
-Work with the Microsoft Azure API.
+Work with the Windows Azure API.
 
 ### Installation
 
