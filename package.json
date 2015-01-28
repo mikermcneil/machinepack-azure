@@ -1,0 +1,26 @@
+{
+  "name": "machinepack-azure",
+  "version": "0.1.0",
+  "description": "Work with the Microsoft Azure API.",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha -b"
+  },
+  "keywords": [
+    "Azure",
+    "machines",
+    "machinepack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies":{
+    "machine": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "machinepack": {
+    "friendlyName": "Azure",
+    "machineDir": "machines/",
+    "machines": []
+  }
+}
