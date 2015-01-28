@@ -13,7 +13,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "machine": "^2.0.0"
+    "machine": "^2.0.0",
+    "azure-mgmt-compute": "^0.9.14",
+    "lodash": "^3.0.0"
   },
   "devDependencies": {
     "mocha": "^2.1.0"
@@ -21,6 +23,8 @@
   "machinepack": {
     "friendlyName": "Azure",
     "machineDir": "machines/",
-    "machines": []
+    "machines": [
+      "list-images"
+    ]
   }
 }
