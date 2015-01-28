@@ -6,7 +6,7 @@ module.exports = {
     subscriptionId: {
       friendlyName: 'Subscription ID',
       description: 'Your Windows Azure subscription id',
-      example: '12113215-73dc-4adb-b657-d754aa0964f1',
+      example: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx',
       whereToGet: {
         url: 'https://account.windowsazure.com/Subscriptions/Statement?subscriptionId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx'
       },
