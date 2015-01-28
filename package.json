@@ -20,6 +20,9 @@
   "devDependencies": {
     "mocha": "^2.1.0"
   },
+  "repository":{
+    "url": "git://github.com/balderdashy/machinepack-azure.git"
+  },
   "machinepack": {
     "friendlyName": "Azure",
     "machineDir": "machines/",
