@@ -18,7 +18,7 @@ module.exports = {
       example: '-----BEGIN CERTIFICATE-----\nxxxxxxxxxxxx\nxxxxxxxxxxxx\nxxxxxxxxxxxx\n........\nxxxxxxxxxxxx\n-----END CERTIFICATE-----',
       whereToGet: {
         description: 'Download or generate the `.pem` certificate file associated with your Azure account.',
-        extendedDescription: 'For info on generating a new certificate file, see http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-use-ssh-key/.  An easy way to grab your existing certificate file is to install the Azure CLI tool with `sudo npm install -g azure-cli` (https://github.com/Azure/azure-xplat-cli) and run `azure account cert export`.  Note that the uploaded certificate is in `.cer` format, but you should use the `.pem` version here.',
+        extendedDescription: 'For info on generating a new certificate file, see http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-use-ssh-key/.  An easy way to grab your existing certificate file is to install the Azure CLI tool with `sudo npm install -g azure-cli` (https://github.com/Azure/azure-xplat-cli) and run `azure account cert export`.  To make the command-line tool work, you\'ll need to follow the directions to set up an organizational account here: http://azure.microsoft.com/en-us/documentation/articles/xplat-cli/.  Note that the uploaded certificate is in `.cer` format, but you should use the `.pem` version here.',
         url: 'https://github.com/Azure/azure-sdk-for-node/tree/master/lib/services/computeManagement#authentication'
       },
       required: true
