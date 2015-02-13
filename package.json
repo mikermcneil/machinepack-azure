@@ -15,7 +15,8 @@
   "dependencies": {
     "machine": "^2.0.0",
     "azure-mgmt-compute": "^0.9.14",
-    "lodash": "^3.0.0"
+    "lodash": "^3.0.0",
+    "azure-cli": "^0.8.14"
   },
   "devDependencies": {
     "mocha": "^2.1.0",
