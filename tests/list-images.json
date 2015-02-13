@@ -1,0 +1,10 @@
+{
+  "machine": "list-images",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}

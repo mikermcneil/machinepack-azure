@@ -3,7 +3,7 @@
   "version": "0.1.4",
   "description": "Work with the Windows Azure API.",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha -b"
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
   },
   "keywords": [
     "Azure",
@@ -18,16 +18,19 @@
     "lodash": "^3.0.0"
   },
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "test-machinepack-mocha": "^0.2.2"
   },
   "repository": {
-    "url": "git://github.com/balderdashy/machinepack-azure.git"
+    "type": "git",
+    "url": "git@github.com:balderdashy/machinepack-azure.git"
   },
   "machinepack": {
     "friendlyName": "Azure",
     "machineDir": "machines/",
     "machines": [
       "list-images"
-    ]
+    ],
+    "testsUrl": "https://travis-ci.org/balderdashy/machinepack-azure"
   }
 }
