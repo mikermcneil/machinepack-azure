@@ -10,7 +10,7 @@ module.exports = {
     var _ = require('lodash');
     var child_process = require('child_process');
     var readline = require('readline');
-    var cliPath = './node_modules/azure-cli/bin/azure';
+    var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
     var uuid = require('uuid');
       var defaults, command;
 

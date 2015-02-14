@@ -10,14 +10,14 @@ module.exports = {
 
     var child_process = require('child_process');
     var readline = require('readline');
-    var cliPath = './node_modules/azure-cli/bin/azure';
+    var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
     var rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout
     });
 
     var command;
-    
+
     command = 'node ' + cliPath + ' account download ';
 
     child_process.exec(command, function (err, stdout) {
@@ -28,9 +28,9 @@ module.exports = {
       rl.question("Please enter the location of your .publishsettings file: ", function(answer) {
 
         var fs = require('fs');
-      
+
         if(!fs.existsSync(answer)){
-          return exists.success('file: ' + answer + ' does not exist!');
+          return exits.success('file: ' + answer + ' does not exist!');
         }
 
         //close the interface
@@ -38,7 +38,7 @@ module.exports = {
 
         //import the the interface
         var command = 'node ' + cliPath + ' account import ' + answer;
-
+        console.log('command:',command);
         child_process.exec(command, function (err, stdout) {
 
           if(err){
@@ -49,7 +49,7 @@ module.exports = {
           return exits.success(stdout);
         });
 
-      
+
       });
     });
   },
