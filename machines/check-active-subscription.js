@@ -31,7 +31,7 @@ module.exports = {
         return exits.success(true);
       }
       else{
-        return exists.success(false);
+        return exits.success(false);
       }
     });
 
