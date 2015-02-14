@@ -1,6 +1,6 @@
 {
   "name": "machinepack-azure",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Work with the Windows Azure API.",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
