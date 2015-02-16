@@ -1,11 +1,20 @@
 module.exports = {
   friendlyName: 'Check Active Subscription',
   description: 'Detects if there is an active azure subscription',
+  
   extendedDescription: '',
   inputs: {},
+
   defaultExit: 'success',
-  exits: { error: { description: 'Unexpected error occurred.' },
-    success: { description: 'Done.' } },
+  exits: { 
+    error: { 
+      description: 'Unexpected error occurred.' 
+    },
+    success: { 
+      description: 'Done.' 
+    } 
+  },
+
   fn: function (inputs,exits) {
 
     var child_process = require('child_process');

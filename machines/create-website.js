@@ -1,11 +1,20 @@
 module.exports = {
+
   friendlyName: 'Create Website',
   description: 'Creates an Azure Website Instance',
   extendedDescription: '',
+
   inputs: {},
   defaultExit: 'success',
-  exits: { error: { description: 'Unexpected error occurred.' },
-    success: { description: 'Done.' } },
+  exits: { 
+    error: { 
+      description: 'Unexpected error occurred.' 
+    },
+    success: { 
+      description: 'Done.' 
+    } 
+  },
+    
   fn: function (inputs,exits) {
     var _ = require('lodash');
     var child_process = require('child_process');
