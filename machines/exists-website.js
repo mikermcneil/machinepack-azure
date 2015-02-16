@@ -6,7 +6,7 @@ module.exports = {
 
   inputs: {
     name: {
-      description: 'The name of the website that will be checked for.',
+      description: 'The name of the website that will be checked for',
       example: 'mywebsitename',
       required: true
     }
@@ -36,7 +36,7 @@ module.exports = {
 
     var command;
 
-    command = 'node ' + cliPath + ' site list ';
+    command = 'node ' + cliPath + ' site list --json';
     child_process.exec(command, function (err, stdout) {
 
       if(err){
@@ -44,7 +44,7 @@ module.exports = {
       }
 
       var listedSites = JSON.parse(stdout);
-      var search = _.findWhere(results, {'name': inputs.name})
+      var search = _.findWhere(listedSites, {'name': inputs.name})
 
       if(search){
         return exits.success(true);
