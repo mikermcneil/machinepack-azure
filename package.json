@@ -18,6 +18,7 @@
     "inquirer": "^0.8.0",
     "lodash": "^3.0.0",
     "machine": "^2.0.0",
+    "request": "^2.53.0",
     "uuid": "^2.0.1"
   },
   "devDependencies": {
@@ -34,9 +35,15 @@
     "machines": [
       "list-images",
       "register-azure-account",
-      "create-website",
+      "set-azure-account",
       "check-active-subscription",
-      "set-azure-account"
+      "create-website",
+      "exists-website",
+      "upload-webjob",
+      "trigger-webjob",
+      "info-webjob",
+      "log-webjob",
+      "upload-file"
     ],
     "testsUrl": "https://travis-ci.org/balderdashy/machinepack-azure"
   }
