@@ -3,8 +3,20 @@ module.exports = {
   friendlyName: 'Create Website',
   description: 'Creates an Azure Website Instance',
   extendedDescription: '',
+  
+  inputs: {
+    name: {
+      description: 'The name for the website',
+      example: 'mywebsite',
+      required: false
+    },
+    location: {
+      description: 'The Azure datacenter for the website',
+      example: 'West US',
+      required: false
+    }
+  },
 
-  inputs: {},
   defaultExit: 'success',
   exits: { 
     error: { 
@@ -21,26 +33,22 @@ module.exports = {
     var readline = require('readline');
     var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
     var uuid = require('uuid');
-      var defaults, command;
+    var defaults, command;
 
-      defaults = {
-          name: uuid.v4(),
-          location: 'West US',
-          hostname: null
-      };
+    defaults = {
+      name: uuid.v4(),
+      location: 'West US',
+    };
 
-      _.defaults(inputs, defaults);
+    _.defaults(inputs, defaults);
 
-      command = 'azure site create --location "' + inputs.location + '" "' + inputs.name + '"';
+    command = 'azure site create --location "' + inputs.location + '" "' + inputs.name + '"';
 
-      child_process.exec(command, function (err, stdout) {
-
-          if (err) {
-              return exists.error(err);
-          }
-
-          return exists.success(stdout);
-      });
-    },
-
+    child_process.exec(command, function (err, stdout) {
+      if (err) {
+          return exists.error(err);
+      }
+      return exists.success(stdout);
+    });
+  }
 };
