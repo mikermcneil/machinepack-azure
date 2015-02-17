@@ -17,7 +17,6 @@ module.exports = {
   fn: function (inputs,exits) {
     var child_process = require('child_process');
     var inquirer = require('inquirer');
-    var readline = require('readline');
     var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
 
     var command;

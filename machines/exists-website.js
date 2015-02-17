@@ -25,18 +25,10 @@ module.exports = {
   fn: function (inputs,exits) {
 
     var child_process = require('child_process');
-    var readline = require('readline');
     var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
     var _ = require('lodash');
-
-    var rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-
-    var command;
-
-    command = 'node ' + cliPath + ' site list --json';
+    var command = 'node ' + cliPath + ' site list --json';
+    
     child_process.exec(command, function (err, stdout) {
 
       if(err){

@@ -40,7 +40,6 @@ module.exports = {
   fn: function (inputs,exits) {
 
     var child_process = require('child_process');
-    var readline = require('readline');
     var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
     var _ = require('lodash');
     var request = require('request');
