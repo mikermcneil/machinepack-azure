@@ -45,10 +45,8 @@ module.exports = {
             return exits.error(err);
           }
 
-
           return exits.success(stdout);
         });
-
 
       });
     });

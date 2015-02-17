@@ -20,11 +20,6 @@ module.exports = {
     var readline = require('readline');
     var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
 
-    var rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-
     var command;
 
     command = 'node ' + cliPath + ' account list ';
