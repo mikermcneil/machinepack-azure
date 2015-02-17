@@ -10,13 +10,7 @@
     "machines",
     "machinepack"
   ],
-  "author": "",
   "contributors": [
-    {
-      "name": "Mike McNeil",
-      "url": "http://balderdash.co/",
-      "email": "customers@balderdash.co"
-    },
     {
       "name": "Felix Rieseberg",
       "url": "http://www.felixrieseberg.com",
@@ -26,6 +20,11 @@
       "name": "Steven Edouard",
       "url": "http://www.stevenedouard.com",
       "email": "steven.edouard1@gmail.com"
+    },
+    {
+      "name": "Mike McNeil",
+      "url": "http://michaelmcneil.com/",
+      "email": "customers@balderdash.co"
     }
   ],
   "license": "MIT",
