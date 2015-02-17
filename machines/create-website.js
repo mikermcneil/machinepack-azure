@@ -46,9 +46,9 @@ module.exports = {
 
     child_process.exec(command, function (err, stdout) {
       if (err) {
-          return exists.error(err);
+          return exits.error(err);
       }
-      return exists.success(stdout);
+      return exits.success(stdout);
     });
   }
 };
