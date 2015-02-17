@@ -11,6 +11,11 @@
     "machinepack"
   ],
   "author": "",
+  "contributors": [
+    {"name": "Mike McNeil", "url": "http://balderdash.co/", "email": "customers@balderdash.co"},
+    {"name": "Felix Rieseberg", "url": "http://www.felixrieseberg.com", "email": "felix@felixrieseberg.com"},
+    {"name": "Steven Edouard", "url": "http://www.stevenedouard.com", "email": "steven.edouard1@gmail.com"}
+  ],
   "license": "MIT",
   "dependencies": {
     "azure-cli": "^0.8.14",
