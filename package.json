@@ -1,6 +1,6 @@
 {
   "name": "machinepack-azure",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Work with the Windows Azure API.",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
@@ -12,9 +12,21 @@
   ],
   "author": "",
   "contributors": [
-    {"name": "Mike McNeil", "url": "http://balderdash.co/", "email": "customers@balderdash.co"},
-    {"name": "Felix Rieseberg", "url": "http://www.felixrieseberg.com", "email": "felix@felixrieseberg.com"},
-    {"name": "Steven Edouard", "url": "http://www.stevenedouard.com", "email": "steven.edouard1@gmail.com"}
+    {
+      "name": "Mike McNeil",
+      "url": "http://balderdash.co/",
+      "email": "customers@balderdash.co"
+    },
+    {
+      "name": "Felix Rieseberg",
+      "url": "http://www.felixrieseberg.com",
+      "email": "felix@felixrieseberg.com"
+    },
+    {
+      "name": "Steven Edouard",
+      "url": "http://www.stevenedouard.com",
+      "email": "steven.edouard1@gmail.com"
+    }
   ],
   "license": "MIT",
   "dependencies": {
