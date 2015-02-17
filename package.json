@@ -1,6 +1,6 @@
 {
   "name": "machinepack-azure",
-  "version": "0.1.4",
+  "version": "1.1.0",
   "description": "Work with the Windows Azure API.",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
@@ -13,10 +13,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "machine": "^2.0.0",
+    "azure-cli": "^0.8.14",
     "azure-mgmt-compute": "^0.9.14",
+    "inquirer": "^0.8.0",
     "lodash": "^3.0.0",
-    "azure-cli": "^0.8.14"
+    "machine": "^2.0.0",
+    "request": "^2.53.0",
+    "uuid": "^2.0.1"
   },
   "devDependencies": {
     "mocha": "^2.1.0",
@@ -30,7 +33,17 @@
     "friendlyName": "Azure",
     "machineDir": "machines/",
     "machines": [
-      "list-images"
+      "list-images",
+      "register-azure-account",
+      "set-azure-account",
+      "check-active-subscription",
+      "create-website",
+      "exists-website",
+      "upload-webjob",
+      "trigger-webjob",
+      "info-webjob",
+      "log-webjob",
+      "upload-file"
     ],
     "testsUrl": "https://travis-ci.org/balderdashy/machinepack-azure"
   }
