@@ -31,6 +31,7 @@
   "dependencies": {
     "azure-cli": "^0.8.14",
     "azure-mgmt-compute": "^0.9.14",
+    "azure-scripty": "^1.0.1",
     "inquirer": "^0.8.0",
     "lodash": "^3.0.0",
     "machine": "^2.0.0",
@@ -59,7 +60,9 @@
       "trigger-webjob",
       "info-webjob",
       "log-webjob",
-      "upload-file"
+      "upload-file",
+      "set-deploy-credentials",
+      "list-azure-accounts"
     ],
     "testsUrl": "https://travis-ci.org/balderdashy/machinepack-azure"
   }
