@@ -1,15 +1,20 @@
 module.exports = {
-  friendlyName: 'Set Azure Account',
-  description: 'Sets the active azure subscription',
+  friendlyName: 'Sets Site Deployment Credentials',
+  description: 'Sets the deployment credntials of an Azure website',
+  
   extendedDescription: '',
   inputs: {
-    subNameOrId: {
-      description: 'The subscription id or name to set as active',
+    deploymentUser: {
+      description: 'The Name of the User',
       example: 'johndoe',
+      required: true
+    },
+    deploymentPassword: {
+      description: 'The deployment password',
+      example: 'p@ssword',
       required: true
     }
   },
-
   defaultExit: 'success',
   exits: { 
     error: { 
@@ -19,15 +24,13 @@ module.exports = {
       description: 'Done.' 
     } 
   },
-  
+
   fn: function (inputs,exits) {
     var child_process = require('child_process');
-    var inquirer = require('inquirer');
     var cliPath = require('path').resolve(__dirname, '../node_modules/azure-cli/bin/azure');
-    
-    var command = 'node ' + cliPath + ' account set ' + inputs.subNameOrId;
 
-    child_process.exec(command, function(err, stdout){
+    var command = 'node ' + cliPath + ' site deployment user set ' + inputs.deploymentUser + ' ' + inputs.deploymentPassword;
+    child_process.exec(command, function (err, stdout) {
 
       if(err){
         return exits.error(err);
@@ -35,5 +38,7 @@ module.exports = {
 
       return exits.success();
     });
+
   }
+
 };
