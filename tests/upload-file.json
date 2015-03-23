@@ -1,0 +1,10 @@
+{
+  "machine": "upload-file",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}

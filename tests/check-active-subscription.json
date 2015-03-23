@@ -1,0 +1,10 @@
+{
+  "machine": "check-active-subscription",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "machine": "log-webjob",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}

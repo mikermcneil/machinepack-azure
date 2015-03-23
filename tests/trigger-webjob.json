@@ -1,0 +1,10 @@
+{
+  "machine": "trigger-webjob",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}

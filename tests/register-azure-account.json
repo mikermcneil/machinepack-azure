@@ -1,0 +1,10 @@
+{
+  "machine": "register-azure-account",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}
