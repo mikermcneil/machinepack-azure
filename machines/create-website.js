@@ -41,7 +41,7 @@ module.exports = {
 
     _.defaults(inputs, defaults);
 
-    command = 'azure site create --location "' + inputs.location + '" "' + inputs.name + '"';
+    command = 'node ' + cliPath + ' site create --location "' + inputs.location + '" "' + inputs.name + '"';
 
     child_process.exec(command, function (err, stdout) {
       if (err) {
