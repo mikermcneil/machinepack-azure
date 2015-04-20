@@ -13,6 +13,10 @@ Work with the Windows Azure API.
 ```sh
 $ npm install machinepack-azure
 ```
+You might not have the proper Visual Studio build configuration to build this.  You can add the Visual Studio version number as a hint. For example, for VS 2013:
+```sh
+npm install machinepack-azure --msvs_version=2013
+```
 
 ## Usage
 
