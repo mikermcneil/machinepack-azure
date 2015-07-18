@@ -1,6 +1,6 @@
 module.exports = {
   friendlyName: 'Sets Site Deployment Credentials',
-  description: 'Sets the deployment credntials of an Azure website',
+  description: 'Sets the deployment credentials of an Azure website',
   
   extendedDescription: '',
   inputs: {
