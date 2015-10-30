@@ -58,7 +58,7 @@ module.exports = {
       return false;
     }
 
-    var n = (/^win/.test(process.platform)) ? inputs.fileLocation.lastIndexOf('\\'); : inputs.fileLocation.lastIndexOf('/');
+    var n = (/^win/.test(process.platform)) ? inputs.fileLocation.lastIndexOf('\\') : inputs.fileLocation.lastIndexOf('/');
     var jobName = (n > -1) ? inputs.fileLocation.substring(n + 1) : inputs.fileLocation;
     var fileStream = fs.createReadStream(inputs.fileLocation);
     var targetUrl = 'https://' + inputs.website + '.scm.azurewebsites.net/api/triggeredwebjobs/' + jobName;
